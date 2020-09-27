@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flask-File Drag Drop System</title>
+  {{ dropzone.load_css() }}
+  {{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 400px;') }}
+</head>
+<body>
+	<div style="color:blue;text-align:center;border: 4px solid #0087F7"> 
+	File drag & Drop System with flask dropzone </div>
+  
+  {{ dropzone.create(action='upload') }}
+  {{ dropzone.load_js() }}
+  {{ dropzone.config() }}
+</body>
+</html>
